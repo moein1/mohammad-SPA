@@ -1,20 +1,20 @@
-import AbstractView from "./AbstractView";
+import AbstractView from "./AbstractView.js";
 
-export default class extends AbstractView{
-    constructor(){
-        super();
+export default class extends AbstractView {
+    constructor(params) {
+        super(params);
         this.setTitle("Dashboard");
     }
 
-    async getHtml(){
+    async getHtml() {
         return `
-            <h1>Welcome back, DOM </h1>
+            <h1>Welcome back, Dom</h1>
             <p>
-                Ut eiusmod cupidatat laboris pariatur excepteur in velit nulla id aliqua adipisicing nisi eiusmod est. Mollit Lorem aliquip esse amet anim. Ipsum minim mollit eu ipsum amet magna fugiat anim Lorem non quis tempor nulla aliquip. Ut dolore irure veniam aliquip elit consequat commodo aute labore velit cillum adipisicing. Nostrud excepteur ex irure labore sunt. Tempor id eu ea qui. Mollit dolor proident exercitation deserunt.
+                Fugiat voluptate et nisi Lorem cillum anim sit do eiusmod occaecat irure do. Reprehenderit anim fugiat sint exercitation consequat. Sit anim laborum sit amet Lorem adipisicing ullamco duis. Anim in do magna ea pariatur et.
             </p>
             <p>
-             <a href="/posts" data-link>View recent posts</a>
+                <a href="/posts" data-link>View recent posts</a>.
             </p>
-        `
+        `;
     }
 }
